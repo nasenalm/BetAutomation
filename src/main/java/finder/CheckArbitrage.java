@@ -23,7 +23,7 @@ public class CheckArbitrage {
 
                     if (!(b1.getBookieKey().equals(b2.getBookieKey()))) {
 
-                        for (int i = 0; i < b1.getBets().size(); i++) { // these aren't currently doing anything because the arraylist aren't being filled
+                        for (int i = 0; i < b1.getBets().size(); i++) { 
                             for (int j = 0; j < b2.getBets().size(); j++) {
 
                                 Bet bet1 = b1.getBets().get(i);
@@ -150,25 +150,6 @@ public class CheckArbitrage {
         return arbPairs.get(index);
     }
 
-//    public ArrayList<findProfit.ArbitragePresent> bestOfEachBookie(){
-//        //this should return an arraylist of arbitrage opportunities that doesn't repeat bookies.
-//        ArrayList<findProfit.ArbitragePresent> returned = new ArrayList<>();
-//        for(findProfit.ArbitragePresent arbPres : arbPairs){
-//            // get boolean value from arbPairs to see which bets are used
-//            // temporarily store which bookies are being used
-//            // find profit margin
-//            // search through the ArrayList called returned to see if there are any opps with higher profit,
-//            // if not, add the pair to the new arraylist.
-//
-//        }
-//        return returned;
-//    }
-
-//    public ArrayList<findProfit.ArbitragePresent> specifiyBookies(){
-//        // will return arraylist like function above, but only if it uses specific bookies
-//        // will probably use function above MAYBE NOT, but it will be similar
-//    }
-//
 }
 
 
