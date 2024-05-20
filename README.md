@@ -4,8 +4,8 @@ IMPORTANT DISCLAIMER: although positive expected value sports betting is legal a
 
 Functionality: this project will receive odds for a variety of different sports from the-odds-api.com, find average fair odds for each event (average no-vig odds),
 and then find the expected value for each bet by comparing the bookmakers odds with the average no vig odds. If a bet is both +EV and is on the bovada sportsbook, 
-a microsoft edge window will pop up, controlled by selenium and automatically place each +EV bet. It will then close the window once all bets are placed, logging
-out of bovada, and schedule another runtime for 1 hour after the initial runtime. Bets will be placed every hour until 20 bets have been placed (with reccomended
+a microsoft edge window will pop up, controlled by selenium, and automatically place each +EV bet. It will then close the window once all bets are placed, log
+out of bovada, and schedule another runtime for 1 hour after the initial runtime. Bets are to be placed every hour until 20 bets have been placed (with reccomended
 bet size of 5% of the users total bankroll). If no +EV bets are found on bovada, the webdriver window will close, and the next runtime will be scheduled)
 
 Setup: 
@@ -13,6 +13,7 @@ Setup:
 - Login information for bovada must be entered in Selenium.java file on lines 96 and 97
 - Microsoft Edge Driver must be locally downloaded, and the file location must be entered in BovadaAutomation.java file on line 11
 - Bet size (reccomended 5% of bankroll) must be entered in BovadaAutomation.java file on line 12
+- Maximum number of bets can be changed from 20 in BovadaAutomation.java file on line 21
 
 Personalization / Possible Additional Use Cases:
 This code is currently setup to only automate +EV spreads betting on Bovada, but the files located in the 'finder' directory find +EV bets for all bookmakers 
