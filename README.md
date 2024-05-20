@@ -1,5 +1,7 @@
 Project: Bet Automation (+EV betting on bovada)
 
+IMPORTANT DISCLAIMER: although positive expected value sports betting is legal and profitabe, every sportstbook has their own terms and conditions that may ban betting with the use of software like this, giving bettors and unfair edge. Sportsbooks, including bovada, have the right to freeze funds or shut down accounts if they suspect that you are 'cheating'. Bet at your own risk!
+
 Functionality: this project will receive odds for a variety of different sports from the-odds-api.com, find average fair odds for each event (average no-vig odds),
 and then find the expected value for each bet by comparing the bookmakers odds with the average no vig odds. If a bet is both +EV and is on the bovada sportsbook, 
 a microsoft edge window will pop up, controlled by selenium and automatically place each +EV bet. It will then close the window once all bets are placed, logging
